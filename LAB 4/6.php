@@ -53,5 +53,7 @@
             echo "The selected blood group is: " . $_POST['blood_group'];
         }
     }
+
+    //completion checkpoint to github
     ?>
 

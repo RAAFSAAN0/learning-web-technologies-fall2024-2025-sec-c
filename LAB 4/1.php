@@ -63,6 +63,8 @@ if (isset($_POST['submit']))
             echo "The name is valid: $name";
         }
     }
+
+   //completion checkpoint to github
 }
 
 

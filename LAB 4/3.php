@@ -77,6 +77,7 @@ if (isset($_POST['submit']))
     {
         echo "Date of Birth: {$day_var} / {$month_var} / {$year_var}";
     }
+    //completion checkpoint to github
 }
 
 ?>
