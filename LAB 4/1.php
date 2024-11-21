@@ -24,42 +24,47 @@
 
 <?php
 
-if (isset($_POST['submit'])) 
-{
+if (isset($_POST['submit']))
+ {
     $name = trim($_POST['username']); 
 
+  
     if (empty($name)) {
         echo "The name field is empty.";
     } 
-    else if(strlen($name)<=2)
+  
+    else if (strlen($name) <= 2) 
     {
-        echo "The field should contain at least 2 character";
-    }
-
-    else if(! $name[0]>='a'&& $name[0]<='z' || $name[0]>='A'&& $name[0]<='Z')
-    {
-            
-        echo "The name must start with a letter";
+        echo "The field should contain at least 2 characters.";
     }
     
-    
-    $valid = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.-";
+    else if (!preg_match('/^[a-zA-Z]/', $name)) 
+    {
+        echo "The name must start with a letter.";
+    }
 
-    for ($i = 0; $i < strlen($name); $i++) {
-        if (strpos($valid, $name[$i]) === false)
-        { 
-            echo "The name contains invalid characters.";
-            return; 
+    else {
+        $valid = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.-";
+        $isValid = true;
+
+        
+        for ($i = 0; $i < strlen($name); $i++) {
+            if (strpos($valid, $name[$i]) === false)
+            {
+                echo "The name contains invalid characters.";
+                $isValid = false;
+                break; 
+            }
+        }
+
+      
+        if ($isValid) 
+        {
+            echo "The name is valid: $name";
         }
     }
+}
 
-echo "The name is valid: $name";
-
-
-       
-        
-
-    }
 
 
    
