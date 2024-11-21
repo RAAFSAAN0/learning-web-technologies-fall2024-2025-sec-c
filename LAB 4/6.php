@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-
-
     <style>
         table {
             border: 0px solid black;
@@ -14,16 +11,15 @@
             padding: 8px;
         }
     </style>
-
-
+</head>
+<body>
     <table>
     <form method="POST" action="">
-
         <tr>
             <td>Blood Group</td>
-            <td >
+            <td>
                 &nbsp;&nbsp;<select name="blood_group" style="width: 70%; height:30px">
-                    <option value="A+" >A+</option>
+                    <option value="A+">A+</option>
                     <option value="A-">A-</option>
                     <option value="B+">B+</option>
                     <option value="B-">B-</option>
@@ -33,55 +29,29 @@
                     <option value="O-">O-</option>
                 </select>
             </td>
-
-           
         </tr>
-
         
         <tr>
-          <td>
-            <hr style="width:190%;text-align:left;margin-left:0">
-
-            <input type="submit">
-          </td>
+            <td>
+                <hr style="width:190%;text-align:left;margin-left:0">
+                <input type="submit" name="submit" value="Submit">
+            </td>
         </tr>
-
-
     </form>
     </table>
-
-
-
-
-
-
-
-   
-</head>
-<body>
-    
-</body>
-</html>
-
-
-<?php
-
-
-if (isset($_POST['submit']))
-{
-    if(!isset($_REQUEST['blood_group']))
+    </body>
+    </html>
+    <?php
+    if (isset($_POST['submit'])) 
     {
-        echo "The blood gorup is not selected";
+        if (!isset($_POST['blood_group'])) 
+        {
+            echo "The blood group is not selected.";
+        } 
+        else 
+        {
+            echo "The selected blood group is: " . $_POST['blood_group'];
+        }
     }
+    ?>
 
-
-    else
-    {
-        echo "the selected Blood group is: ".$_POST['blood_group'];
-    }
-    
-
-}
-
-
-?>

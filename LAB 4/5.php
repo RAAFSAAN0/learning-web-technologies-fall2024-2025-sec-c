@@ -13,10 +13,10 @@
     <td colspan="2">
         <fieldset>
             <legend>Email</legend>
-                <input type="checkbox" name="degree" value="ssc">ssc
-                <input type="checkbox" name="degree" value="hsc">Hsc
-                <input type="checkbox" name="degree" value="bsc">BSc
-                <input type="checkbox" name="degree" value="msc">MSc
+                <input type="checkbox" name="ssc" value="ssc">ssc
+                <input type="checkbox" name="hsc" value="hsc">Hsc
+                <input type="checkbox" name="bsc" value="bsc">BSc
+                <input type="checkbox" name="msc" value="msc">MSc
 
                 <hr>
                 <input type="submit" name="submit" value="Submit">
@@ -30,22 +30,21 @@
 
 </table>
 
+</body>
+</html>
+
+
 <?php
 
-if (isset($_POST['submit']))
-{
-    if(!isset($_REQUEST['degree'] ))
-    {
-        echo"no degree is selected";
-    }
+$get_length = count($_POST);
 
-    else
-    {
-        echo "selected degreeis: ".$_REQUEST['degree'];
-    }
-
+if($get_length <= 2){
+    echo "At least two degrees must be selected";
 }
-
+else
+{
+    echo "OK";
+}
 
 ?>
 
@@ -59,7 +58,4 @@ if (isset($_POST['submit']))
 
 
 
-
     
-</body>
-</html>
