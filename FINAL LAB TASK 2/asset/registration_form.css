@@ -1,0 +1,128 @@
+/* General body and layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form container */
+.form-container {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    width: 150%;
+    max-width: 750px; /* Increased to accommodate side-by-side labels */
+    box-sizing: border-box;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap; /* Allows elements to wrap to the next line when needed */
+    gap: 15px;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #1500ff;
+    width: 100%; /* Ensure the heading spans the full width */
+}
+
+/* Form Labels and Inputs */
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #000000;
+    width: 48%; /* Take 45% of the space */
+    display: inline-block; /* Align labels beside the inputs */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+    width: 50%; /* Take 50% of the space */
+    padding: 8px;
+    border: 1px solid #4b78ff;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #fafafa;
+    margin-bottom: 15px; /* Added margin-bottom for spacing */
+}
+
+/* Textarea specific */
+textarea {
+    resize: vertical;
+    height: 110px; /* Make textarea a fixed height */
+    width: 100%; /* Ensure textarea spans full width */
+}
+
+/* Radio buttons */
+label input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Add placeholders to inputs and textareas
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="password"]::placeholder,
+input[type="date"]::placeholder,
+textarea::placeholder {
+    color: #888;
+    font-style: italic;
+} */
+
+/* Radio group styling */
+.radio-group {
+    margin-bottom: 15px; /* Space below the radio group */
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Vertically align the text with the radio button */
+    gap: 20px; /* Space between each radio button */
+}
+.reg{
+   
+    text-decoration:  20px;
+    font-size: 20px;
+    font-style: bold;
+}
+
+
+
+.radio-group label {
+    font-size: 14px;
+    margin-right: 20px; /* Space between radio buttons */
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px; /* Space between the radio button and the label */
+}
+
