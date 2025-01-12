@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 alert('Something went wrong, please try again.');
             } else {
                 alert('Employee added successfully!');
-                window.location.href = '../view/show_employees_view.php'; // Redirect to the employee list
+                window.location.href = '../view/show_employees_view.php'; 
             }
         })
         .catch(error => {
