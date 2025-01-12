@@ -18,6 +18,8 @@ require_once('../controller/show_employees_controller.php');
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../asset/search.js"></script> 
     <script src="../asset/delete.js"></script> 
+    <script src="../asset/edit_employee.js"></script> 
+    
 
 
     <style>
