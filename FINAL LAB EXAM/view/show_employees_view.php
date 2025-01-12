@@ -82,5 +82,11 @@ require_once('../controller/show_employees_controller.php');
     <form action="add_employee_view.php" method="get">
         <button type="submit">Add Employee</button>
     </form>
+
+     <br>
+    <br>
+    
+
+    <a href="login.php">LOG OUT</a>
 </body>
 </html>
