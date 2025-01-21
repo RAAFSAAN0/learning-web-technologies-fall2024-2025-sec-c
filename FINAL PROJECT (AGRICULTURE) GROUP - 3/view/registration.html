@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        .message {
+            color: red;
+        }
+        .valid {
+            color: green;
+        }
+
+
+
+        /* General body and layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form container */
+.form-container {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    width: 150%;
+    max-width: 750px; 
+    box-sizing: border-box;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 15px;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #1500ff;
+    width: 100%; 
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #000000;
+    width: 48%; 
+    display: inline-block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+    width: 50%; 
+    padding: 8px;
+    border: 1px solid #4b78ff;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #fafafa;
+    margin-bottom: 15px; 
+}
+
+/* Textarea specific */
+textarea {
+    resize: vertical;
+    height: 110px; 
+    width: 100%; 
+}
+
+/* Radio buttons */
+label input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Add placeholders to inputs and textareas
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="password"]::placeholder,
+input[type="date"]::placeholder,
+textarea::placeholder {
+    color: #888;
+    font-style: italic;
+} */
+
+/* Radio group styling */
+.radio-group {
+    margin-bottom: 15px; 
+    display: flex; 
+    align-items: center;
+    gap: 20px; 
+}
+.reg{
+   
+    text-decoration:  20px;
+    font-size: 20px;
+    font-style: bold;
+}
+
+
+
+.radio-group label {
+    font-size: 14px;
+    margin-right: 20px; 
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px; 
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Registration</h1>
+        <form id="registration-form">
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="first_name" required>
+
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="last_name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <div id="email-message" class="message"></div>
+
+            <label for="mobile">Mobile:</label>
+            <input type="tel" id="mobile" name="mobile" pattern="\d{11}" title="Enter a valid 11-digit mobile number" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <div id="password-message" class="message"></div>
+
+            <label for="repassword">Retype Password:</label>
+            <input type="password" id="repassword" name="retype_password" required>
+            <div id="repassword-message" class="message"></div>
+
+            <label for="role">I am registering as a:</label>
+            <input type="radio" name="role" value="Farmer" required> Farmer
+            <input type="radio" name="role" value="Student"> Student
+            <input type="radio" name="role" value="Consumer"> Consumer
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="USA">United States</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">United Kingdom</option>
+            </select>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <button type="button" id="submit-btn">Sign Up</button>
+        </form>
+    </div>
+
+    <script src="../asset/registration_validation.js"></script>
+</body>
+</html>

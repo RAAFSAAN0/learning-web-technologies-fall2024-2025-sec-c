@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Farmer Profile</title>
+    <link rel="stylesheet" href="../asset/farmer_profile.css">
+</head>
+<body>
+    <form id="farmer-profile-form">
+        <fieldset style="width: 50%;">
+            <legend>Farmer Profile</legend>
+            <table>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" id="first_name" name="first_name" required readonly></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" id="last_name" name="last_name" required readonly></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" id="email" name="email" required readonly></td>
+                </tr>
+                <tr>
+                    <td>Mobile:</td>
+                    <td><input type="text" id="mobile" name="mobile" required readonly></td>
+                </tr>
+                <tr>
+                    <td>Country:</td>
+                    <td><input type="text" id="country" name="country" required readonly></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><input type="text" id="address" name="address" required readonly></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td><input type="text" id="dob" name="dob" required readonly></td>
+                </tr>
+            </table>
+
+            <button type="button" id="edit-button">Edit Profile</button>
+            <button type="submit" id="save-button" style="display: none;">Save Changes</button>
+            <button type="button" onclick="window.location.href='../view/farmer_menu.html';">Back</button>
+        </fieldset>
+    </form>
+    <script src="../asset/get_farmer_profile.js"></script>
+</body>
+</html>

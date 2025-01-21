@@ -1,0 +1,50 @@
+/* navbar.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the navbar */
+.nav {
+    background-color: #333; /* Dark background for the navbar */
+    overflow: hidden;
+    position: fixed; /* Keep the navbar fixed at the top */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Navbar list styling */
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Align items horizontally */
+    justify-content: center; /* Center items horizontally */
+}
+
+/* Navbar item styling */
+.nav-item {
+    padding: 14px 20px;
+}
+
+/* Link styling */
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+}
+
+.nav-link:hover {
+    background-color: #5500ff; /* Add a hover effect */
+    border-radius: 4px;
+}
+
+/* Ensure the content below the navbar isn't hidden */
+body {
+    padding-top: 60px; /* Adjust depending on navbar height */
+}

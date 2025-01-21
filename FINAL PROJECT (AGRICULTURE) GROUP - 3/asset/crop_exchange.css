@@ -1,0 +1,62 @@
+/* Basic styling for body and form */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styling for the fieldset */
+fieldset {
+    width: 30%;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+legend {
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* Styling for list */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+    font-size: 1.1em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for the button */
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}

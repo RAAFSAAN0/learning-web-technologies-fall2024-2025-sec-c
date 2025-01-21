@@ -1,0 +1,86 @@
+/* Basic styling for body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styling for the form */
+form {
+    width: 50%;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Styling for fieldset and legend */
+fieldset {
+    padding: 20px;
+    border: none;
+}
+
+legend {
+    font-size: 1.5em;
+    color: #333;
+    text-align: center;
+}
+
+/* Styling for the table */
+table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+td {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Styling for the submit button */
+button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Styling for the back button */
+button[type="button"] {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+button[type="button"]:hover {
+    background-color: #c0392b;
+}

@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Crop Exchange</title>
+    <script src="../asset/submit_crop.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="../asset/Post_exchange.css">
+</head>
+<body>
+    <form id="cropForm" method="POST" action="../controller/submit_crop.php">
+        <fieldset style="width: 50%;">
+            <legend>Exchange Post</legend>
+
+            <table>
+                <tr>
+                    <td>Crop Name:</td>
+                    <td><input type="text" id="crop_name" name="crop_name" placeholder="Enter crop name" required></td>
+                </tr>
+                <tr>
+                    <td>Crop Quantity:</td>
+                    <td><input type="text" id="crop_quantity" name="crop_quantity" placeholder="Enter crop quantity (KG)" required></td>
+                </tr>
+                <tr>
+                    <td>Crop Description:</td>
+                    <td>
+                        <textarea id="crop_description" name="crop_description" placeholder="Enter crop description" rows="5" cols="30" required></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button type="submit">Submit</button>
+                    </td>
+                </tr>
+            </table>
+            <button type="button" onclick="window.location.href='crop_exchange.html';">Back</button>
+        </fieldset>
+    </form>
+</body>
+</html>

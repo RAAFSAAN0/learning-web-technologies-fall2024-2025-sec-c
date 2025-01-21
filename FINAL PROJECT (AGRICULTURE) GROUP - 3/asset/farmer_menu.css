@@ -1,0 +1,49 @@
+/* Example CSS for Farmer Menu */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+fieldset {
+    border: 2px solid #4CAF50;
+    padding: 20px;
+    background-color: white;
+}
+
+legend {
+    font-size: 3em;
+    color: #4CAF50;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 20px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-size: 1.1em;
+}
+
+a:hover {
+    color: #45a049;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #c81414;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
